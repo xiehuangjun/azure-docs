@@ -301,7 +301,7 @@ You'll connect to **myVM1** and **myVM2** with Azure Bastion and configure the s
         Name = 'Default Web Site'
         BindingInformation = '*:80:'
     }
-    Remove-IISSiteBinding @para2 -Force
+    Remove-IISSiteBinding @para2
 
     ## Remove the default htm file. ##
     Remove-Item c:\inetpub\wwwroot\iisstart.htm
